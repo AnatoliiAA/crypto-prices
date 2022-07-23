@@ -1,4 +1,4 @@
-import styles from "../styles/coins-price.module.scss";
+import styles from "../styles/coin-price-plate.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSort } from "@fortawesome/free-solid-svg-icons";
 
@@ -12,16 +12,14 @@ const CoinPricePlate = ({
 }) => {
   return (
     <div className={styles.price_plate} key={symbol}>
-      <span
-        className={`${styles.price_plate__ceil} ${styles.price_plate__symbol}`}
-      >
+      <span className={`${styles.ceil} ${styles.price_plate__symbol}`}>
         {symbol}
       </span>
-      <span className={styles.price_plate__ceil}>{name}</span>
+
+      <span className={styles.ceil}>{name}</span>
+
       <span
-        className={`${styles.price_plate__ceil} ${
-          sortByPrice ? styles.clickable : ""
-        }`}
+        className={`${styles.ceil} ${sortByPrice ? styles.clickable : ""}`}
         onClick={sortByPrice}
       >
         {price}
@@ -29,8 +27,9 @@ const CoinPricePlate = ({
           <FontAwesomeIcon className={styles.sort_icon} icon={faSort} />
         )}
       </span>
+
       <span
-        className={`${styles.price_plate__ceil} ${styles.price_plate__change} ${
+        className={`${styles.ceil} ${styles.price_plate__change} ${
           typeof priceChange === "number" && priceChange > 0
             ? styles.price_plate__change_green
             : typeof priceChange === "number" && priceChange < 0

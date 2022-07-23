@@ -1,3 +1,15 @@
+.ceil {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  width: 41%;
+  text-align: center;
+  border-right: 1px solid lightgray;
+}
+
 .price_plate {
   display: flex;
   justify-content: space-between;
@@ -12,17 +24,6 @@
   &:hover {
     transform: scale(1.01);
     box-shadow: 2px 4px 20px -5px rgba(0, 0, 0, 0.5);
-  }
-  &__ceil {
-    position: relative;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 50px;
-    width: 41%;
-    text-align: center;
-    border-right: 1px solid lightgray;
   }
   &__symbol {
     width: 10%;
@@ -41,6 +42,8 @@
     }
   }
 }
+
+
 
 .clickable {
   cursor: pointer;

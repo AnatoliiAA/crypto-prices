@@ -1,5 +1,5 @@
-This was created using NextJS, React, Redux. \
-The app is hosted here:  \
+This app was created using NextJS, React, and Redux. \
+The app is hosted here: [https://test-task-crypto.vercel.app/](https://test-task-crypto.vercel.app/) \
 Feel free to check it out :)
 
 ## Test task goals: 
